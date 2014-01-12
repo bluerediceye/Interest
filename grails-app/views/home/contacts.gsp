@@ -11,23 +11,21 @@
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script>
         function initialize() {
-            var myLatlng = new google.maps.LatLng(51.27684, -2.343858),
+            var myLatlng = new google.maps.LatLng(51.45238, -2.57884),
                 map_canvas = document.getElementById('map_canvas'),
                 map_options = {
                     center: myLatlng,
-                    zoom: 8,
+                    zoom: 13,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 },
                 map = new google.maps.Map(map_canvas, map_options),
                 marker = new google.maps.Marker({
                     position: myLatlng,
                     map: map,
-                    title:"Hello World!"
+                    title:"We're here"
                 });
         }
-
         google.maps.event.addDomListener(window, 'load', initialize);
-        marker.setMap(map);
     </script>
 </head>
 
