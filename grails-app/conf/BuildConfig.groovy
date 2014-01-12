@@ -1,3 +1,5 @@
+import com.sun.tools.javac.resources.compiler
+
 grails.servlet.version = "3.0" // Change depending on target container compliance (2.5 or 3.0)
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
@@ -65,8 +67,9 @@ grails.project.dependency.resolution = {
         runtime ":jquery:1.10.2.2"
         runtime ":resources:1.2.1"
         // Uncomment these (or add new ones) to enable additional resources capabilities
-        //runtime ":zipped-resources:1.0.1"
-        //runtime ":cached-resources:1.1"
+        compile ":zipped-resources:1.0.1"
+        compile ":cache-headers:1.1.5"
+        compile ":cached-resources:1.1"
         //runtime ":yui-minify-resources:0.1.5"
     }
 }
