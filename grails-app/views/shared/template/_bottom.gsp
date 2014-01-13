@@ -28,5 +28,5 @@
 
     <div class="clear"></div>
 
-    <g:render template="/shared/footer"/>
+    <g:render template="/shared/template/footer"/>
 </div>

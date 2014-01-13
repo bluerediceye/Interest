@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta name="layout" content="baseCommon"/>
     <title>Welcome to Ming's Virtual World</title>
 </head>
 
@@ -176,32 +177,10 @@
                     href="#">Author</a></div>
         </div>
 
-        <div class="pagenav">
-            <span class="alignleft"><a href="#">Previous Posts</a></span> <span class="alignright"><a
-                href="#">Next Posts</a></span></div>
-
+        <g:render template="/shared/template/pagenav"/>
     </div>
 
-    <div id="sidebar">
-        <h2>Sidebar Menu</h2>
-        <ul>
-            <li><a href="#">
-                Suspendisse laoreet</a></li>
-            <li><a href="#">mi eget dapibus eleifend</a></li>
-            <li><a href="#">risus dolor egestas ante</a></li>
-            <li><a href="#">luctus est risus ac mi</a></li>
-            <li><a href="#">Mauris in libero eget leo laoreet</a></li>
-            <li><a href="#">Nam porta nisi id turpis.</a></li>
-            <li><a href="#">Ut ac justo at urna consequat mollis</a></li>
-            <li><a href="#">Ut interdum sem ac justo</a></li>
-            <li><a href="#">Curabitur vestibulum nulla</a></li>
-            <li><a href="#">Praesent imperdiet</a></li>
-            <li><a href="#">Morbi lorem sem</a></li>
-            <li><a href="#">pulvinar condimentum</a></li>
-            <li><a href="#">porttitor ultricies,</a></li>
-        </ul>
-    </div>
-
+    <g:render template="/shared/template/sidebar"/>
     <div class="clear"/>
 </div>
 </body>

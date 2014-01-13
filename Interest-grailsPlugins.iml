@@ -7,9 +7,9 @@
           <root url="file://$MODULE_DIR$/target/work/plugins/jquery-1.10.2.2/web-app" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.1/web-app" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/database-migration-1.3.8/grails-app/views" relative="/" />
-          <root url="file://$MODULE_DIR$/target/work/plugins/cached-resources-1.1/grails-app/views" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/zipped-resources-1.0.1/web-app" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/zipped-resources-1.0.1/grails-app/views" relative="/" />
+          <root url="file://$MODULE_DIR$/target/work/plugins/cached-resources-1.1/grails-app/views" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/cache-headers-1.1.5/web-app" relative="/" />
         </webroots>
         <sourceRoots />
@@ -71,6 +71,9 @@
     <content url="file://$MODULE_DIR$/target/work/plugins/webxml-1.4.1">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/webxml-1.4.1/src/groovy" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/target/work/plugins/yui-minify-resources-0.1.5">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/yui-minify-resources-0.1.5/src/groovy" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/zipped-resources-1.0.1">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/zipped-resources-1.0.1/grails-app/i18n" isTestSource="false" />
     </content>
@@ -99,11 +102,13 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-jasper/7.0.47/tomcat-embed-jasper-7.0.47.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina-ant/7.0.47/tomcat-catalina-ant-7.0.47.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/liquibase/liquibase-core/2.0.5/liquibase-core-2.0.5.jar!/" />
+          <root url="file://$MODULE_DIR$/target/work/plugins/yui-minify-resources-0.1.5/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
           <root url="jar://$USER_HOME$/.ideaLibSources/liquibase-core-2.0.5-sources.jar!/" />
         </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/target/work/plugins/yui-minify-resources-0.1.5/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>

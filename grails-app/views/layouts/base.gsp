@@ -9,15 +9,14 @@
 
 <body>
 <div id="wrap">
-    <g:render template="/shared/top"/>
-    <g:render template="/shared/menu"/>
+    <g:pageProperty name="page.statusbar"/>
+    <g:render template="/shared/template/top"/>
+    <g:render template="/shared/template/menu"/>
     <div id="contentwrap">
         <div id="header"></div>
         <g:layoutBody/>
-        <g:render template="/shared/bottom"/>
+        <g:render template="/shared/template/bottom"/>
     </div>
-    <div id="contentbtm"></div>
-    <div id="credits"></div>
 </div>
 </body>
 </html>

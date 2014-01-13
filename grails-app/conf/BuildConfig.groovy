@@ -70,6 +70,6 @@ grails.project.dependency.resolution = {
         compile ":zipped-resources:1.0.1"
         compile ":cache-headers:1.1.5"
         compile ":cached-resources:1.1"
-        //runtime ":yui-minify-resources:0.1.5"
+        runtime ":yui-minify-resources:0.1.5"
     }
 }
