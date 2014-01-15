@@ -5,9 +5,9 @@
         </div>
     </g:if>
 
-    <g:if test="${session.user}">
+    <g:if test="${session.username}">
         <br/>
-        Login as: ${session.user} | <g:link controller="login" action="logout">Logout</g:link>
+        Login as: ${session.username} | <g:link controller="login" action="logout">Logout</g:link>
     </g:if>
     <g:else>
         <g:include view="shared/login/loginForm.gsp"/>

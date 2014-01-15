@@ -1,23 +1,27 @@
 package com.interest.admin
 
+import com.interest.user.User
+
 class LoginController {
+    def loginService
 
     def show = {
 
     }
 
     def login = {
-        if (params.username == 'admin' && params.password == 'admin') {
+
+        if(loginService.isAuthenticated(params.username, params.password)){
             flash.message = 'Login succeed'
-            session.user = 'admin'
-        } else {
+            session.username = params.username
+        }else {
             flash.message = 'Login failed'
         }
         redirect(controller: 'home', action: 'welcome')
     }
 
     def logout = {
-        session.user = null
+        session.username = null
         redirect(controller: 'login', action: 'show')
     }
 }

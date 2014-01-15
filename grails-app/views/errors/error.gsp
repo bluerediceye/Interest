@@ -9,11 +9,14 @@
 
 <body>
 <g:if env="development">
+    <ul class="errors">
+        <li>An error has occurred - ${message}</li>
+    </ul>
     <g:renderException exception="${exception}"/>
 </g:if>
 <g:else>
     <ul class="errors">
-        <li>An error has occurred</li>
+        <li>An error has occurred - ${message}</li>
     </ul>
 </g:else>
 </body>
