@@ -1,6 +1,6 @@
 package com.interest.user
 
-class User {
+class User implements Serializable{
 
     static constraints = {
         username unique: true

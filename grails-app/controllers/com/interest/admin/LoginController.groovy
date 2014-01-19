@@ -3,17 +3,17 @@ package com.interest.admin
 import com.interest.user.User
 
 class LoginController {
-    def loginService
+    def authenticateService
 
     def show = {
 
     }
 
     def login = {
-
-        if(loginService.isAuthenticated(params.username, params.password)){
+        User user = authenticateService.isAuthenticated(params.username, params.password)
+        if(user){
             flash.message = 'Login succeed'
-            session.username = params.username
+            session.user = user
         }else {
             flash.message = 'Login failed'
         }

@@ -54,6 +54,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
+        compile ':webflow:2.0.8.1'
         // plugins for the build system only
         build ":tomcat:7.0.47"
 
