@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="layout" content="baseCommon"/>
+    <meta name="layout" content="base"/>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
         <div class="fieldcontain">
             <label for="mobileNumber">Mobile Number</label>
-            <g:passwordField name="mobileNumber" value="${userInstance?.mobileNumber}"/>
+            <g:textField name="mobileNumber" value="${userInstance?.mobileNumber}"/>
         </div>
 
         <div class="fieldcontain">
@@ -53,10 +53,12 @@
         </div>
     </fieldset>
 
-    <g:submitButton name="next" value="Next"></g:submitButton>
-    <g:submitButton name="skip" value="Skip"></g:submitButton>
-    <g:submitButton name="previous" value="Previous"></g:submitButton>
-    <g:submitButton name="cancel" value="Cancel"></g:submitButton>
+    <fieldset>
+        <g:submitButton name="next" value="Next"></g:submitButton>
+        <g:submitButton name="skip" value="Skip"></g:submitButton>
+        <g:submitButton name="previous" value="Previous"></g:submitButton>
+        <g:submitButton name="cancel" value="Cancel"></g:submitButton>
+    </fieldset>
 </g:form>
 </body>
 </html>

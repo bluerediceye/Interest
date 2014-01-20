@@ -1,7 +1,10 @@
 package com.interest
 
 import com.interest.user.User
+import grails.transaction.Transactional
+import org.codehaus.groovy.grails.web.servlet.mvc.GrailsParameterMap
 
+@Transactional
 class RegisterController {
 
     def index = {
@@ -11,9 +14,9 @@ class RegisterController {
     def signUpFlow = {
         enterBasicDetails {
             render(view: '/register/signUp/enterBasicDetails')
-
             on("next") {
                 User user = new User(params)
+                user.lastVisit = new Date()
                 flow.userInstance = user
                 if(User.findByUsername(user.username) || User.findByEmail(user.email)){
                     error()
@@ -29,8 +32,7 @@ class RegisterController {
             render(view: '/register/signUp/enterFurtherDetails')
             on('next') {
                 User user = flow.userInstance
-//                user.setProperties(params)
-                user.workEmail = "li.ming113@gmail.com"
+                user.setProperties(params)
             }.to("signAgreements")
             on('skip').to("signAgreements")
             on('previous').to("enterBasicDetails")
@@ -51,10 +53,12 @@ class RegisterController {
             on('previous').to('signAgreements')
             on("cancel").to("home")
             on("confirm"){
-                println("hello world")
-//                User user = flow.userInstance
-                User user = new User(username: 'mli', password: 'mli')
-                user.save(flush: true)
+                User user = flow.userInstance
+                if(user.save(flush: true)){
+                    success()
+                }else {
+                    error()
+                }
             }.to('login')
             on(Exception).to("handleError")
         }

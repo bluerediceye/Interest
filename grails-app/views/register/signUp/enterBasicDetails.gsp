@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="layout" content="baseCommon"/>
+    <meta name="layout" content="base"/>
 </head>
 
 <body>
 <g:form>
-    <fieldset class="form">
+    <fieldset>
         <div class="fieldcontain">
             <label for="username">Username</label>
             <g:textField name="username" value="${userInstance?.username}"/>
@@ -38,7 +38,7 @@
         </div>
     </fieldset>
 
-    <fieldset class="buttons">
+    <fieldset>
         <g:submitButton name="next" value="Next"/>
         <g:submitButton name="cancel" value="Cancel"/>
     </fieldset>
