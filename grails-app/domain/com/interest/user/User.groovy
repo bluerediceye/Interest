@@ -3,8 +3,10 @@ package com.interest.user
 class User implements Serializable{
 
     static constraints = {
-        username unique: true
-        email unique: true, email: true
+//        username unique: true, nullable: false
+//        email unique: true, email: true, nullable: false
+//        password nullable: false
+//        workEmail username: true, email: true
     }
 
     String fullName
@@ -14,5 +16,15 @@ class User implements Serializable{
     Date lastVisit
     String username;
     String email
+
+    String address;
+    String postcode;
+    String mobileNumber;
+    String homeNumber;
+    String companyName;
+    String companyAddress;
+    String companyPostcode;
+    String workEmail;
+    String workNumber;
 
 }

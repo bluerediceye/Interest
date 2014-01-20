@@ -86,10 +86,11 @@ grails.hibernate.cache.queries = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        grails.serverURL = "http://192.168.1.78:8080"
     }
     production {
         grails.logging.jul.usebridge = false
-        grails.serverURL = "http://hmgrails.elasticbeanstalk.com"
+//        grails.serverURL = "http://hmgrails.elasticbeanstalk.com"
     }
 }
 
@@ -102,13 +103,13 @@ log4j = {
     //}
 
     root {
-//        debug()
+        debug()
     }
 
     debug  'filters'
     debug  'grails.app'
 
-    error  'org.codehaus.groovy.grails.web.servlet',        // controllers
+    debug  'org.codehaus.groovy.grails.web.servlet',        // controllers
            'org.codehaus.groovy.grails.web.pages',          // GSP
            'org.codehaus.groovy.grails.web.sitemesh',       // layouts
            'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping

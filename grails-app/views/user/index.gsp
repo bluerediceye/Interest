@@ -28,13 +28,13 @@
 					
 						<g:sortableColumn property="email" title="${message(code: 'user.email.label', default: 'Email')}" />
 					
-						<g:sortableColumn property="firstName" title="${message(code: 'user.firstName.label', default: 'First Name')}" />
+						<g:sortableColumn property="password" title="${message(code: 'user.password.label', default: 'Password')}" />
 					
-						<g:sortableColumn property="fullName" title="${message(code: 'user.fullName.label', default: 'Full Name')}" />
+						<g:sortableColumn property="workEmail" title="${message(code: 'user.workEmail.label', default: 'Work Email')}" />
 					
-						<g:sortableColumn property="lastName" title="${message(code: 'user.lastName.label', default: 'Last Name')}" />
+						<g:sortableColumn property="address" title="${message(code: 'user.address.label', default: 'Address')}" />
 					
-						<g:sortableColumn property="lastVisit" title="${message(code: 'user.lastVisit.label', default: 'Last Visit')}" />
+						<g:sortableColumn property="companyAddress" title="${message(code: 'user.companyAddress.label', default: 'Company Address')}" />
 					
 					</tr>
 				</thead>
@@ -46,13 +46,13 @@
 					
 						<td>${fieldValue(bean: userInstance, field: "email")}</td>
 					
-						<td>${fieldValue(bean: userInstance, field: "firstName")}</td>
+						<td>${fieldValue(bean: userInstance, field: "password")}</td>
 					
-						<td>${fieldValue(bean: userInstance, field: "fullName")}</td>
+						<td>${fieldValue(bean: userInstance, field: "workEmail")}</td>
 					
-						<td>${fieldValue(bean: userInstance, field: "lastName")}</td>
+						<td>${fieldValue(bean: userInstance, field: "address")}</td>
 					
-						<td><g:formatDate date="${userInstance.lastVisit}" /></td>
+						<td>${fieldValue(bean: userInstance, field: "companyAddress")}</td>
 					
 					</tr>
 				</g:each>

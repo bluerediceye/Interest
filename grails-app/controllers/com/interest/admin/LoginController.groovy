@@ -21,7 +21,7 @@ class LoginController {
     }
 
     def logout = {
-        session.username = null
+        session.user = null
         redirect(controller: 'login', action: 'show')
     }
 }
